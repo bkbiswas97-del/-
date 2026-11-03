@@ -1,0 +1,103 @@
+import { SituationalDilemma } from '../types/character';
+
+export const SITUATIONAL_DILEMMAS: SituationalDilemma[] = [
+  {
+    id: 'dilemma1',
+    titleBn: 'রাস্তায় পাওয়া অর্থের ব্যাগ',
+    titleEn: 'Found Bag of Money',
+    scenarioBn: 'রাস্তায় হেঁটে যাওয়ার সময় আপনি দেখলেন একটি ব্যাগ পড়ে আছে, যার ভেতর নগদ ৫০,০০০ টাকা এবং একটি জাতীয় পরিচয়পত্র রয়েছে। আশেপাশে কেউ আপনাকে লক্ষ্য করছে না। আপনি কী করবেন?',
+    scenarioEn: 'Walking on the street, you find an abandoned bag containing cash and a national ID card. Nobody is watching you. What do you do?',
+    choices: [
+      {
+        id: 'd1_c1',
+        textBn: 'আইডি কার্ড দেখে মালিকের সাথে যোগাযোগ করে পুরো টাকা অক্ষত অবস্থায় ফিরিয়ে দেব বা নিকটস্থ থানায় জমা দেব।',
+        textEn: 'Contact the owner via the ID or turn it over completely intact to the police.',
+        moralQualityBn: 'উচ্চ সততা, নীতিবোধ ও আমানত রক্ষা',
+        moralQualityEn: 'Highest Integrity & Trustworthiness',
+        characterWeight: { integrity: 5, empathy: 5, patience: 4, courage: 4 },
+      },
+      {
+        id: 'd1_c2',
+        textBn: 'নিজের ব্যবহারের কথা না ভেবে কিছু অংশ গরীবদের দান করব, বাকিটা রেখে দেব।',
+        textEn: 'Donate a portion to the poor and keep the rest.',
+        moralQualityBn: 'স্ববিরোধী যুক্তি ও নৈতিক আপস',
+        moralQualityEn: 'Rationalized Moral Compromise',
+        characterWeight: { integrity: 2, empathy: 3, patience: 2, courage: 2 },
+      },
+      {
+        id: 'd1_c3',
+        textBn: 'ভাগ্য আমার দিকে সহায় হয়েছে ভেবে সম্পূর্ণ টাকা নিজের কাজে খরচ করে ফেলব।',
+        textEn: 'Treat it as personal luck and keep all the money for self.',
+        moralQualityBn: 'লোভ ও নীতিহীন আত্মসাৎ প্রবণতা',
+        moralQualityEn: 'Greed & Moral Failure',
+        characterWeight: { integrity: 1, empathy: 1, patience: 1, courage: 1 },
+      },
+    ],
+  },
+  {
+    id: 'dilemma2',
+    titleBn: 'সহকর্মীর কাজের ক্রেডিট',
+    titleEn: 'Workplace Credit Dilemma',
+    scenarioBn: 'অফিস বা শিক্ষাপ্রতিষ্ঠানে আপনার দল একটি অসাধারণ কাজ সম্পন্ন করেছে যা মূলত আপনার এক চুপচাপ সহকর্মীর দুর্দান্ত ধারণা ছিল। কিন্তু বস আপনাকে এককভাবে কৃতিত্ব দিয়ে বড় পদোন্নতির আশ্বাস দিচ্ছেন। আপনি কী করবেন?',
+    scenarioEn: 'Your team finished a great project which was mainly the brainchild of a quiet teammate. However, the boss praises you solely and promises a promotion. What do you do?',
+    choices: [
+      {
+        id: 'd2_c1',
+        textBn: 'স্পষ্টভাবে বসকে বলব আসল অবদান আমার সেই সহকর্মীর এবং তার প্রাপ্য প্রশংসা ও পুরস্কার নিশ্চিত করব।',
+        textEn: 'Clearly inform the boss that the key idea was the quiet colleague’s and ensure they receive credit.',
+        moralQualityBn: 'ন্যায়পরায়ণতা, সততা ও সহমর্মিতা',
+        moralQualityEn: 'Justice, Honesty & Magnanimity',
+        characterWeight: { integrity: 5, empathy: 5, patience: 4, courage: 5 },
+      },
+      {
+        id: 'd2_c2',
+        textBn: 'কৃতিত্বটা আপাতত নিজে গ্রহণ করব, তবে গোপনে সহকর্মীকে কিছু উপহার বা সাহায্য দিয়ে সন্তুষ্ট রাখব।',
+        textEn: 'Accept the praise now, but privately appease the colleague with favors or gifts.',
+        moralQualityBn: 'চতুর স্বার্থপরতা ও ছদ্ম-সুবিচার',
+        moralQualityEn: 'Calculated Self-interest',
+        characterWeight: { integrity: 2, empathy: 2, patience: 3, courage: 2 },
+      },
+      {
+        id: 'd2_c3',
+        textBn: 'সুযোগ বারবার আসে না, তাই সম্পূর্ণ কৃতিত্ব নিজের বলে দাবি করব এবং সহকর্মীকে চুপ থাকতে বলব।',
+        textEn: 'Opportunity knocks once; claim all credit and pressure the colleague to stay silent.',
+        moralQualityBn: 'প্রবঞ্চনা ও অহংকারী শোষণ',
+        moralQualityEn: 'Exploitative Deception',
+        characterWeight: { integrity: 1, empathy: 1, patience: 1, courage: 1 },
+      },
+    ],
+  },
+  {
+    id: 'dilemma3',
+    titleBn: 'প্রকাশ্য অপমান ও রাগ দমন',
+    titleEn: 'Public Insult & Anger Restraint',
+    scenarioBn: 'একটি সামাজিক অনুষ্ঠানে কেউ অযৌক্তিক ও উদ্ধতভাবে সকলের সামনে আপনাকে কটূক্তি করল। আপনি কীভাবে সামাল দেবেন?',
+    scenarioEn: 'At a social gathering, someone insults you loudly and unfairly in front of everyone. How do you respond?',
+    choices: [
+      {
+        id: 'd3_c1',
+        textBn: 'দৃঢ় কিন্তু মার্জিত কণ্ঠে বলব, "আপনার ভাষা আপনার রুচি প্রকাশ করছে, আমি এই স্তরে নামব না" এবং শান্ত থাকব।',
+        textEn: 'Firmly yet calmly state that their tone reflects their own mindset and refuse to escalate.',
+        moralQualityBn: 'আত্মমর্যাদা, প্রজ্ঞাপূর্ণ আত্মনিয়ন্ত্রণ',
+        moralQualityEn: 'Dignified Self-respect & Mastery',
+        characterWeight: { integrity: 5, empathy: 4, patience: 5, courage: 5 },
+      },
+      {
+        id: 'd3_c2',
+        textBn: 'দ্বিগুণ চিৎকার ও গালিগালাজ করে তাকে উচিত শিক্ষা দেওয়ার চেষ্টা করব।',
+        textEn: 'Yell back twice as loudly and shout insults to teach them a lesson.',
+        moralQualityBn: 'ক্ষতিকর ক্রোধ ও অনিয়ন্ত্রিত উত্তেজনা',
+        moralQualityEn: 'Volatile Anger & Escalation',
+        characterWeight: { integrity: 2, empathy: 1, patience: 1, courage: 2 },
+      },
+      {
+        id: 'd3_c3',
+        textBn: 'অপমানে কেঁদে ফেলে স্থান ত্যাগ করব এবং দীর্ঘদিন মনের মধ্যে তীব্র প্রতিহিংসা পুষে রাখব।',
+        textEn: 'Cry, run away, and harbor long-lasting bitter grudges.',
+        moralQualityBn: 'আবেগীয় দুর্বলতা ও ক্ষোভ লালন',
+        moralQualityEn: 'Emotional Fragility & Grudge-holding',
+        characterWeight: { integrity: 3, empathy: 2, patience: 2, courage: 1 },
+      },
+    ],
+  },
+];

@@ -1,0 +1,8 @@
+{
+  "name": "চরিত্র ও ব্যক্তিত্ব দর্পণ - Charitra Darpan",
+  "description": "সোশ্যাল মিডিয়া লিংক বা মনস্তাত্ত্বিক বিশ্লেষণের মাধ্যমে মানুষের চরিত্র, দোষ-গুণ, ভালো ও খারাপ অভ্যাস, সাইকোলজি, পছন্দ-অপছন্দ, আসক্তি ও লাইফস্টাইল জানার প্ল্যাটফর্ম।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
